@@ -11,7 +11,6 @@ div.container {
   height: 800px;
   display: flex;
   justify-content: center;
-  /* background-color: aqua; */
 }
 div.flower {
   position: absolute;
@@ -37,56 +36,77 @@ div.face img {
   width: 100%;
   height: 100%;
 }
-.list-item {
+div.roulet {
+  /* background-color: beige; */
   position: relative;
-  width: 100px;
-  height: 100px;
-  top: 300px;
-  left: -50px;
-  transform: translate(-30%, -100%);
-  transform-style: preserve-3d;
-  z-index: -1;
+  margin: 0px auto;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: flower-rotate 13s linear infinite;
+}
+.list-item {
+  /* background-color: aqua; */
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  animation: rotate 13s linear infinite;
 }
 .list-item li {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 40%;
+}
+.list-item li img {
   width: 100%;
   height: 100%;
 }
-/* .list-item li:nth-child(1) {
-  animation: heart-shoot-1 1s linear infinite;
+.list-item li:nth-child(1) {
+  transform: translate(0, -400px);
 }
 .list-item li:nth-child(2) {
-  animation: heart-shoot-2 1s linear infinite;
+  transform: translate(calc(400px * sin(30deg)), calc(400px * sin(-60deg)))
+    rotate(30deg);
 }
 .list-item li:nth-child(3) {
-  animation: heart-shoot-3 3s linear infinite;
+  transform: translate(calc(400px * sin(60deg)), calc(400px * sin(-30deg)))
+    rotate(60deg);
 }
 .list-item li:nth-child(4) {
-  animation: heart-shoot-4 4s linear infinite;
+  transform: translate(+400px, 0) rotate(90deg);
 }
 .list-item li:nth-child(5) {
-  animation: heart-shoot-5 5s linear infinite;
+  transform: translate(calc(400px * sin(60deg)), calc(400px * sin(30deg)))
+    rotate(120deg);
 }
 .list-item li:nth-child(6) {
-  animation: heart-shoot-6 6s linear infinite;
+  transform: translate(calc(400px * sin(30deg)), calc(400px * sin(60deg)))
+    rotate(150deg);
 }
 .list-item li:nth-child(7) {
-  animation: heart-shoot-7 7s linear infinite;
+  transform: translate(0, +400px) rotate(180deg);
 }
 .list-item li:nth-child(8) {
-  animation: heart-shoot-8 8s linear infinite;
+  transform: translate(calc(400px * sin(-30deg)), calc(400px * sin(60deg)))
+    rotate(210deg);
 }
 .list-item li:nth-child(9) {
-  animation: heart-shoot-9 9s linear infinite;
+  transform: translate(calc(400px * sin(-60deg)), calc(400px * sin(30deg)))
+    /* 이거 이미지가 틀어져있음 */ rotate(140deg);
 }
 .list-item li:nth-child(10) {
-  animation: heart-shoot-10 10s linear infinite;
+  transform: translate(-400px, 0) rotate(270deg);
 }
 .list-item li:nth-child(11) {
-  animation: heart-shoot-11 11s linear infinite;
+  transform: translate(calc(400px * sin(-60deg)), calc(400px * sin(-30deg)))
+    rotate(300deg);
 }
 .list-item li:nth-child(12) {
-  animation: heart-shoot-12 12s linear infinite;
-} */
+  transform: translate(calc(400px * sin(-30deg)), calc(400px * sin(-60deg)))
+    rotate(330deg);
+}
