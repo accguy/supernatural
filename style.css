@@ -37,7 +37,6 @@ div.face img {
   height: 100%;
 }
 div.roulet {
-  /* background-color: beige; */
   position: relative;
   margin: 0px auto;
   width: 700px;
@@ -45,10 +44,9 @@ div.roulet {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: flower-rotate 13s linear infinite;
+  animation: flower-rotate 50s reverse linear infinite;
 }
 .list-item {
-  /* background-color: aqua; */
   position: absolute;
   width: 600px;
   height: 600px;
@@ -60,53 +58,53 @@ div.roulet {
   width: 100px;
   height: 100px;
   top: 40%;
-  left: 40%;
+  left: 41%;
 }
 .list-item li img {
   width: 100%;
   height: 100%;
 }
 .list-item li:nth-child(1) {
-  transform: translate(0, -400px);
+  transform: translate(0, -420px);
 }
 .list-item li:nth-child(2) {
-  transform: translate(calc(400px * sin(30deg)), calc(400px * sin(-60deg)))
+  transform: translate(calc(420px * sin(30deg)), calc(420px * sin(-60deg)))
     rotate(30deg);
 }
 .list-item li:nth-child(3) {
-  transform: translate(calc(400px * sin(60deg)), calc(400px * sin(-30deg)))
+  transform: translate(calc(420px * sin(60deg)), calc(420px * sin(-30deg)))
     rotate(60deg);
 }
 .list-item li:nth-child(4) {
-  transform: translate(+400px, 0) rotate(90deg);
+  transform: translate(+420px, 0) rotate(90deg);
 }
 .list-item li:nth-child(5) {
-  transform: translate(calc(400px * sin(60deg)), calc(400px * sin(30deg)))
+  transform: translate(calc(420px * sin(60deg)), calc(420px * sin(30deg)))
     rotate(120deg);
 }
 .list-item li:nth-child(6) {
-  transform: translate(calc(400px * sin(30deg)), calc(400px * sin(60deg)))
+  transform: translate(calc(420px * sin(30deg)), calc(420px * sin(60deg)))
     rotate(150deg);
 }
 .list-item li:nth-child(7) {
-  transform: translate(0, +400px) rotate(180deg);
+  transform: translate(0, +420px) rotate(180deg);
 }
 .list-item li:nth-child(8) {
-  transform: translate(calc(400px * sin(-30deg)), calc(400px * sin(60deg)))
+  transform: translate(calc(420px * sin(-30deg)), calc(420px * sin(60deg)))
     rotate(210deg);
 }
 .list-item li:nth-child(9) {
-  transform: translate(calc(400px * sin(-60deg)), calc(400px * sin(30deg)))
+  transform: translate(calc(420px * sin(-60deg)), calc(420px * sin(30deg)))
     /* 이거 이미지가 틀어져있음 */ rotate(140deg);
 }
 .list-item li:nth-child(10) {
-  transform: translate(-400px, 0) rotate(270deg);
+  transform: translate(-420px, 0) rotate(270deg);
 }
 .list-item li:nth-child(11) {
-  transform: translate(calc(400px * sin(-60deg)), calc(400px * sin(-30deg)))
+  transform: translate(calc(420px * sin(-60deg)), calc(420px * sin(-30deg)))
     rotate(300deg);
 }
 .list-item li:nth-child(12) {
-  transform: translate(calc(400px * sin(-30deg)), calc(400px * sin(-60deg)))
+  transform: translate(calc(420px * sin(-30deg)), calc(420px * sin(-60deg)))
     rotate(330deg);
 }
